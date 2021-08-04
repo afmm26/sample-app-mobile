@@ -4,7 +4,7 @@ buildscript {
     ext.kotlin_version = '1.4.20-M1'
     ext {
         buildToolsVersion = "29.0.2"
-        minSdkVersion = 16
+        minSdkVersion = 21
         compileSdkVersion = 29
         targetSdkVersion = 29
         playServicesLocationVersion = "17.0.0"
@@ -20,7 +20,7 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-    }
+
 }
 
 allprojects {
@@ -39,4 +39,6 @@ allprojects {
         jcenter()
         maven { url 'https://www.jitpack.io' }
     }
+
+}
 }
